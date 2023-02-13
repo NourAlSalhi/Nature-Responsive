@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,7 +16,36 @@
 </head>
 
 <body>
+    <!-- Navbar -->
+    <nav>
+        <h1 class="logo">Nature</h1>
+        <ul class="navList">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Tours</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#" class="btn-link">Contact</a></li>
+        </ul>
+        <i class="ri-menu-line menu-btn"></i>
+    </nav>
+    <!-- header -->
+    <header>
+        <div class="content">
+            <h2>Explore The Nature World</h2>
+            <div class="line"></div>
+            <h1>A Wonderful Gift</h1>
+            <a href="#" class="btn-link">Learn More</a>
+        </div>
 
+    </header>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn');
+        const navList = document.querySelector('.navList');
+
+        menuBtn.addEventListener('click', () => {
+            navList.classList.toggle('mobile-menu');
+        }) 
+    </script>
 </body>
 
 </html>
