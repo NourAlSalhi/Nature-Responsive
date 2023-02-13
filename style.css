@@ -7,9 +7,12 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
-body, html{
+
+body,
+html {
     overflow-x: hidden;
 }
+
 /* style navbar */
 nav {
     display: flex;
@@ -101,38 +104,138 @@ section {
     font-size: 4vmin;
     color: rgb(255, 51, 190);
 }
-.main .row{
+
+.main .row {
     margin-top: 50px;
 }
-.row{
+
+.row {
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-between;
 }
+
 .row .col {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 80%;
 }
-.col img{
+
+.col img {
     width: 80%;
 
 }
-h4{
+
+h4 {
     font-size: 3vmin;
-    color:rgb(255, 51, 190);
+    color: rgb(255, 51, 190);
     margin: 20px auto;
 }
-p{
-    color:gray;
+
+p {
+    color: gray;
     padding: 0px 48px;
 
 }
-.main .btn-link{
+
+.main .btn-link {
     margin-top: 30px;
 }
+
+/* style explore */
+.explore {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./img/01.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.main-explore {
+    width: 60%;
+    padding: 50px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-explore .line {
+    margin-bottom: 50px;
+}
+
+.main-explore h1 {
+    font-size: 7vmin;
+}
+
+.main-explore a {
+    margin-top: 40px;
+}
+
+.contain,
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    align-items: center;
+
+}
+.contail-col{
+    width: 40%;
+}
+.img-col{
+    width: 60%;
+}
+.gallery img {
+    max-width: 300px;
+    margin:10px;
+}
+
+.contain-col h1{
+    font-size: 7vmin;
+    color: rgb(59, 0, 40);
+    
+}
+.contain-col .line{
+    margin-left: 170px;
+}
+.contain-col{
+    padding: 0;
+    margin: 30px auto;
+}
+.contail-col .btn-link{
+    margin-left: -100px;
+}
+footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 80px;
+    margin: 0;
+    background: rgb(67, 67, 67);
+    text-align: center;
+}
+footer p{
+    color: white;
+    margin: 20px auto;
+}
+/* Animation */
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+.btn-link:hover{
+    background: whitesmoke;
+    color:rgb(255, 51, 190);
+    box-shadow: 2px 2px 5px black;
+}
+
 /* responsive mobile */
 @media (max-width:850px) {
     nav {
@@ -166,5 +269,16 @@ p{
 
     .navList li {
         margin: 30px auto;
+    }
+
+    .row {
+        flex-direction: column;
+        gap: 50px;
+    }
+   .col img{
+    width: 90%;
+   }
+    .explore {
+        justify-content: center;
     }
 }
