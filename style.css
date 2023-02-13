@@ -1,3 +1,4 @@
+/* globel css */
 * {
     padding: 0;
     margin: 0;
@@ -6,7 +7,9 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
 }
-
+body, html{
+    overflow-x: hidden;
+}
 /* style navbar */
 nav {
     display: flex;
@@ -87,6 +90,49 @@ header .content h1 {
     color: white;
 }
 
+/* style section main */
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(255, 51, 190);
+}
+.main .row{
+    margin-top: 50px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+}
+.col img{
+    width: 80%;
+
+}
+h4{
+    font-size: 3vmin;
+    color:rgb(255, 51, 190);
+    margin: 20px auto;
+}
+p{
+    color:gray;
+    padding: 0px 48px;
+
+}
+.main .btn-link{
+    margin-top: 30px;
+}
 /* responsive mobile */
 @media (max-width:850px) {
     nav {
